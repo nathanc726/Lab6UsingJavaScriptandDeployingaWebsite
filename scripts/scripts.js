@@ -71,7 +71,7 @@ function changeModel() {
 
 recalculate();
 }
-modelButton.addEventListener("click", changeModel)
+modelButton.addEventListener("click", changeModel);
 
 /****************** duration button logic ******************/
 /*  - first, create a variable to represent the "Change Duration" pseudo-button.
@@ -86,12 +86,12 @@ modelButton.addEventListener("click", changeModel)
 
 // INSERT YOUR CODE HERE
 
-let durationButton = document.getElementById("duration-button")
+let durationButton = document.getElementById("duration-button");
 
 function changeDuration() {
-    let modelDuration = document.getElementById("duration-text")
-    duration = prompt("Please input your duration: ")
+    let modelDuration = document.getElementById("duration-text");
+    duration = prompt("Please input your duration: ");
     modelDuration.innerHTML = duration;
-    recalculate()
+    recalculate();
 }
 durationButton.addEventListener("click", changeDuration);
